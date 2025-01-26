@@ -1,0 +1,84 @@
+.contact {
+  padding: 6rem 0;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(170, 78, 87) 0%,
+    rgba(174, 16, 16, 1) 97%
+  );
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.09) 0px 8px 16px;
+  color: #e0f2fe;
+}
+.contact p {
+  color: #f8fafc;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 200px;
+  text-align: center;
+  line-height: 1.5;
+  
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  
+
+}
+
+.form-group input,
+.form-group textarea {
+  width: 600px;
+  padding: 0.75rem ;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #e2e1e4;
+  transition: all 0.3s ease;
+
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #60a5fa; 
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.1);
+}
+.form-group input:-webkit-autofill,
+.form-group input:-webkit-autofill:hover,
+.form-group input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #f4f5f4;
+  -webkit-box-shadow: 0 0 0px 1000px #1b1d1c inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.container{
+  border: 10px solid black;
+  background: linear-gradient(
+    90deg,
+    rgb(93, 189, 167) 0%,
+    rgb(149, 17, 193) 97%
+  );
+}
+.Submit{
+  width: 600px;
+
+  display: inline-block;
+  padding: 10px;
+  background-color: #4dff00;
+  color: #0e0e0e;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}

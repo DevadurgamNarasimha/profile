@@ -1,0 +1,138 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.95),
+      rgba(240, 249, 255, 0.95)
+    );
+    backdrop-filter: blur(12px);
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(219, 234, 254, 0.3);
+    background: rgb(80, 58, 180);
+    background: linear-gradient(
+      90deg,
+      rgb(110, 78, 192) 0%,
+      rgb(167, 48, 135) 68%,
+      rgb(87, 58, 190) 100%
+    );
+  }
+  
+  .nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-content h2 {
+    color: white;
+    font-size: 1.8rem;
+    background: linear-gradient(
+      45deg,
+      #083368,
+       #08192c 
+    );
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 8s ease infinite;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ebeced;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 0;
+  }
+  
+  .nav-links a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    color: #08192c;
+    background: linear-gradient(
+      to right,
+      transparent,
+      #0f0f0f,
+       transparent
+    );
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+    opacity: 0;
+  }
+  
+  .nav-links a:hover {
+    background: linear-gradient(
+      45deg,
+      #0e0f12,
+      
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .nav-links a:hover::before {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .navbar {
+      transition: transform 0.3s ease;
+    }
+  
+    .navbar.hidden {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .nav-content:hover {
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.1),
+      rgba(219, 234, 254, 0.1)
+    );
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links a.active {
+    background: linear-gradient(
+      45deg,
+      #1d4ed8,
+       #2563eb 
+    );
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
